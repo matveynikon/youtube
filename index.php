@@ -14,7 +14,8 @@
   require 'vendor/autoload.php';
   echo("mnames");
   $client = \Symfony\Component\Panther\Client::createChromeClient();  
-  $client->request('GET', 'https://www.youtube.com/');
+  $client->request('GET', 'https://github.com/FriendsOfPhp/Goutte');
+  sleep(2);
 ?>
 </body>
 </head>
