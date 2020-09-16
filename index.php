@@ -9,11 +9,7 @@
 <?php
   error_reporting(E_ALL);
   ini_set('display_errors', 1);  
-  require 'vendor/autoload.php';
-  echo("mnames");
-  $client = \Symfony\Component\Panther\Client::createChromeClient();  
-  $client->request('GET', 'https://www.youtube.com/');
-  sleep(10);
+  exec("php panther.php");
 ?>
 </body>
 </head>
