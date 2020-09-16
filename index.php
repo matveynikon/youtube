@@ -14,7 +14,7 @@
     //use Goutte\Client;
     //$client = new Goutte\Client();    
   $client->request('GET', 'https://matveynikon.wixsite.com/dailyhero/post/4-ocean');
-  sleep(15);
+  sleep(10);
 ?>
 </body>
 </head>
