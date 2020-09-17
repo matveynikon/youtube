@@ -13,8 +13,13 @@
   //exec("php panther.php");
   require 'vendor/autoload.php';
   echo("mnames");
-  $client = \Symfony\Component\Panther\Client::createChromeClient();  
-  $client->request('GET', 'https://stackoverflow.com/questions/19834444/php-execute-linux-command-using-exec');
+  $client = \Symfony\Component\Panther\Client::createChromeClient(); 
+  try{
+      $client->request('GET', 'https://stackoverflow.com/questions/19834444/php-execute-linux-command-using-exec');
+  }
+  catch(exception $e){
+      echo("why");
+  }
   sleep(2);
 ?>
 </body>
