@@ -11,16 +11,6 @@
   ini_set('display_errors', 1);  
   exec("kill $(lsof -t -i:9515)"); 
   //exec("php panther.php");
-  require 'vendor/autoload.php';
-  echo("mnames");
-  $client = \Symfony\Component\Panther\Client::createChromeClient(); 
-  /*try{
-      $client->request('GET', 'https://stackoverflow.com/questions/19834444/php-execute-linux-command-using-exec');
-  }
-  catch(exception $e){
-      echo("why");
-  }
-  sleep(2);*/
 ?>
 </body>
 </head>
