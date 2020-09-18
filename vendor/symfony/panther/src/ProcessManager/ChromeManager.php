@@ -77,9 +77,9 @@ final class ChromeManager implements BrowserManagerInterface
             case 'Windows':
                 return __DIR__.'/../../chromedriver-bin/chromedriver.exe';
             case 'Darwin':
-                return __DIR__.'/../../chromedriver-bin/chromedriver.exe';
+                return __DIR__.'/../../chromedriver-bin/chromedriver_mac64';
             default:
-                return __DIR__.'/../../chromedriver-bin/chromedriver.exe';
+                return __DIR__.'/../../chromedriver-bin/chromedriver_linux64';
         }
     }
 
