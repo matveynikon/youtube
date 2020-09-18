@@ -9,8 +9,9 @@
 <?php
   error_reporting(E_ALL);
   ini_set('display_errors', 1);  
-  //exec("kill $(lsof -t -i:9515)"); 
-  //exec("php panther.php");
+  exec("cd vendor/symfony/panther/chromedriver-bin/"); 
+  sleep(1);
+  exec("./update.sh");
   require 'vendor/autoload.php';
   echo("mnames");
   $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
