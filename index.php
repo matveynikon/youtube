@@ -10,7 +10,12 @@
   error_reporting(E_ALL);
   ini_set('display_errors', 1);  
   //exec("kill $(lsof -t -i:9515)"); 
-  exec("php panther.php");
+  //exec("php panther.php");
+  require 'vendor/autoload.php';
+  echo("mnames");
+  $client = \Symfony\Component\Panther\Client::createChromeClient();  
+  $client->request('GET', 'https://matveynikon.wixsite.com/dailyhero/post/4-ocean');
+  sleep(5);
 ?>
 </body>
 </head>
