@@ -13,7 +13,9 @@
   //exec("php panther.php");
   require 'vendor/autoload.php';
   echo("mnames");
-  $client = \Symfony\Component\Panther\Client::createChromeClient();  
+  $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
+      '--no-sandbox'      
+  ]);  
   $client->request('GET', 'https://matveynikon.wixsite.com/dailyhero/post/4-ocean');
   sleep(5);
 ?>
