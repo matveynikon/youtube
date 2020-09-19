@@ -13,7 +13,7 @@
   //exec("./update.sh");
   require 'vendor/autoload.php';
   echo("mnames");
-  $client = \Symfony\Component\Panther\Client::createFirefoxClient(null, [
+  $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
       '--no-sandbox'      
   ]);  
   $client->request('GET', 'https://matveynikon.wixsite.com/dailyhero/post/4-ocean');
